@@ -38,3 +38,14 @@ def listar_usuarios():
             usuario.fecha_registro = row[6]
             usuarios.append(usuario)
         return usuarios
+
+def limpiar_datos_nulos():
+    """Elimina usuarios y facturas con campos obligatorios nulos o vacíos."""
+    with get_connection() as conn:
+        c = conn.cursor()
+        # Eliminar facturas con monto nulo o negativo, descripción vacía o estado inválido
+        c.execute("DELETE FROM facturas WHERE monto IS NULL OR monto <= 0 OR descripcion IS NULL OR descripcion = '' OR estado NOT IN ('Pendiente', 'Pagada', 'Cancelada')")
+        # Eliminar usuarios con nombre, apellidos o email nulos/vacíos
+        c.execute("DELETE FROM usuarios WHERE nombre IS NULL OR nombre = '' OR apellidos IS NULL OR apellidos = '' OR email IS NULL OR email = ''")
+        conn.commit()
+    return True
