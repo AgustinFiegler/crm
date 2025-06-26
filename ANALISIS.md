@@ -1,7 +1,10 @@
 # ANÁLISIS Y JUSTIFICACIÓN DEL PROYECTO CRM CONSOLE
 
+## Estado de entrega
+El sistema CRM Console se entrega con la base de datos limpia, sin usuarios ni facturas, cumpliendo con la consigna de entrega profesional.
+
 ## Solución y estrategia
-El sistema CRM Console fue desarrollado en Python siguiendo una estructura profesional de paquete, con módulos separados para modelos, servicios, utilidades y acceso a base de datos. Se priorizó la claridad, la validación de datos y la facilidad de uso desde consola.
+El sistema fue desarrollado en Python siguiendo una estructura profesional de paquete, con módulos separados para modelos, servicios, utilidades y acceso a base de datos. Se priorizó la claridad, la validación de datos y la facilidad de uso desde consola.
 
 ## Justificación de tipos de datos
 - **Strings** para nombres, apellidos, emails, descripciones y estados.
@@ -23,13 +26,8 @@ El sistema cumple con los criterios de la consigna:
 - Documentación y análisis incluidos.
 - Limpieza de datos nulos desde el menú.
 
-## Mejoras posibles
-- Exportación de reportes a CSV.
-- Interfaz web o API REST.
-- Gestión de usuarios y permisos.
-
 ## Conclusión
-El sistema está listo para entrega y evaluación, cumpliendo con los requisitos académicos y buenas prácticas de desarrollo en Python.
+El sistema está listo para entrega y evaluación, cumpliendo con los requisitos académicos y buenas prácticas de desarrollo en Python. La base de datos se entrega limpia.
 
 ## Estructura del proyecto
 El proyecto sigue la siguiente estructura de carpetas y archivos:
