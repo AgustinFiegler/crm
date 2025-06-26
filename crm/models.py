@@ -20,11 +20,3 @@ class Factura:
         self.descripcion = descripcion
         self.monto = monto
         self.estado = estado
-
-class Presupuesto:
-    def __init__(self, descripcion, monto, estado):
-        self.numero = None
-        self.fecha = datetime.datetime.now()
-        self.descripcion = descripcion
-        self.monto = monto
-        self.estado = estado

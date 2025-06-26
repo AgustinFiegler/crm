@@ -19,7 +19,7 @@ crm-console/
     utils.py        # Utilidades y validaciones
     db.py           # Conexión y estructura de la base de datos
     __init__.py
-    __main__.py
+    __main__.py     # Punto de entrada para python -m crm
   README.md
   ANALISIS.md
   CRM-Entrega.sqlite3

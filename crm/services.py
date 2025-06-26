@@ -1,4 +1,4 @@
-from crm.models import Usuario, Factura, Presupuesto
+from crm.models import Usuario, Factura
 from crm.db import get_connection
 import datetime
 
@@ -40,7 +40,7 @@ def listar_usuarios():
         return usuarios
 
 def limpiar_datos_nulos():
-    """Elimina usuarios y facturas con campos obligatorios nulos o vacíos."""
+    """Elimina usuarios y facturas con campos obligatorios nulos o vacíos en toda la base."""
     with get_connection() as conn:
         c = conn.cursor()
         # Eliminar facturas con monto nulo o negativo, descripción vacía o estado inválido
